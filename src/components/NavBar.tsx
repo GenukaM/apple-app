@@ -1,6 +1,5 @@
 import { NavLinks } from "../constants/intex";
 
-
 const NavBar = () => {
   return (
     <header>

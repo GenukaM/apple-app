@@ -1,4 +1,4 @@
-import { NavBar } from "./components";
+import { NavBar, Hero} from "./components";
 
 
 
@@ -6,6 +6,7 @@ const App = () => {
   return(
     <div className="text-2xl font-bold">
       <NavBar />
+      <Hero />
     </div>
   )
 }

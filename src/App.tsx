@@ -1,4 +1,4 @@
-import { NavBar, Hero} from "./components";
+import { NavBar, Hero, ProductViewer} from "./components";
 
 
 
@@ -7,6 +7,7 @@ const App = () => {
     <div className="text-2xl font-bold">
       <NavBar />
       <Hero />
+      <ProductViewer/>
     </div>
   )
 }

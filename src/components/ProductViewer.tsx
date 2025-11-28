@@ -1,6 +1,7 @@
 // ...existing code...
 import useMacbookStore from '../store';
 import clsx from 'clsx';
+import StudioLights from './StudioLights';
 import {Canvas} from '@react-three/fiber';
 import { Box, OrbitControls } from '@react-three/drei';
 import { MacbookModel14, MacbookModel16 } from './models';
@@ -30,7 +31,7 @@ const ProductViewer = () => {
 
       <Canvas id='canvas' camera={{position:[0,2,5], fov:50, near:0.1, far:100}}>
         {/* Add 3D Model Here [X,Y,Z] */}
-        <ambientLight intensity={1}/>
+        <StudioLights />
         <MacbookModel14 position={[0,0,0]} scale={0.06} />
         <OrbitControls enableZoom={false}/>
       </Canvas>
